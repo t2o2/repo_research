@@ -1,0 +1,65 @@
+Task:
+
+We would like to have a tool that can help us show the historical number of unique active developers within a group of
+repos. The definition of an active developer is a developer who have committed a change to any of the repos within the 
+rolling 30 days window throughout the commit history.
+
+Write a software that can take a toml file like this:
+--------
+# Ecosystem Level Information
+title = "Magi"
+
+sub_ecosystems = []
+
+github_organizations = ["https://github.com/magi-project"]
+
+# Repositories
+[[repo]]
+url = "https://github.com/m-pays/m-cpuminer-qt"
+
+[[repo]]
+url = "https://github.com/m-pays/m-cpuminer-v2"
+
+[[repo]]
+url = "https://github.com/m-pays/magi"
+
+[[repo]]
+url = "https://github.com/m-pays/magi-api-cpp"
+--------
+
+And generate a csv file which looks like this:
+
+date       | active developers
+-----------+------------------
+2021-01-10 | 10
+2021-01-11 | 2
+2021-01-12 | 23
+2021-01-13 | 9
+
+
+Config:
+ChatEnvConfig.clear_structure: True
+ChatEnvConfig.brainstorming: False
+
+
+Roster:
+Chief Executive Officer, Counselor, Chief Human Resource Officer, Chief Product Officer, Chief Technology Officer, Programmer, Code Reviewer, Software Test Engineer, Chief Creative Officer
+
+Modality:
+application
+
+Ideas:
+
+
+Language:
+ Python
+
+Code_Version:
+8.0
+
+Proposed_images:
+0
+
+Incorporated_images:
+0
+
